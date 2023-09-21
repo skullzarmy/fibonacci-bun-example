@@ -1,4 +1,4 @@
-import { fibonacci } from "./fib"; // Import your existing Fibonacci function
+import { fibonacci } from "./fib";
 
 export default {
     fetch(req: Request) {

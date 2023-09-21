@@ -1,4 +1,3 @@
-// server.ts
 import fibonacciAPI from "./fib-api";
 
 export default {
