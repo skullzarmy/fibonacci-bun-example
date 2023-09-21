@@ -1,5 +1,7 @@
 # Fibonacci Sequence with Bun Runtime
 
+[![Run Bun Tests](https://github.com/skullzarmy/fibonacci-bun-example/actions/workflows/bun-tests.yml/badge.svg)](https://github.com/skullzarmy/fibonacci-bun-example/actions/workflows/bun-tests.yml)
+
 ## Overview
 
 This example project demonstrates how to build a simple Fibonacci API and a web page that fetches the Fibonacci sequence from this API. The project is built using the Bun runtime, a fast and efficient JavaScript/TypeScript runtime designed for high-performance applications.
@@ -15,7 +17,7 @@ One of the standout features of this project is its zero-dependency architecture
 -   Server and client code optimized for performance and efficiency
 -   Utilizes Bun's native file handlers and server capabilities
 -   Zero external dependencies
--   Integrated Bun tests via [GitHub Actions workflow](.github/workflows/bun-tests.yml) [![Run Bun Tests](https://github.com/skullzarmy/fibonacci-bun-example/actions/workflows/bun-tests.yml/badge.svg)](https://github.com/skullzarmy/fibonacci-bun-example/actions/workflows/bun-tests.yml)
+-   Integrated Bun tests via [GitHub Actions workflow](.github/workflows/bun-tests.yml)
 
 ## Prerequisites
 
@@ -47,6 +49,8 @@ This will start the server, and it should be listening for incoming HTTP request
 ## Access the Web Page
 
 Once the server is running, you can navigate to http://localhost:3000 (or whatever port you've configured) in your web browser to see the Fibonacci sequence being printed on the page.
+
+![Web page in action](./fib-example.webp)
 
 ## Watch Mode (Optional)
 
