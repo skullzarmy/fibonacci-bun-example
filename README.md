@@ -15,6 +15,7 @@ One of the standout features of this project is its zero-dependency architecture
 -   Server and client code optimized for performance and efficiency
 -   Utilizes Bun's native file handlers and server capabilities
 -   Zero external dependencies
+-   Integrated Bun tests via GitHub Actions [![Run Bun Tests](https://github.com/skullzarmy/fibonacci-bun-example/actions/workflows/bun-tests.yml/badge.svg)](https://github.com/skullzarmy/fibonacci-bun-example/actions/workflows/bun-tests.yml)
 
 ## Prerequisites
 
