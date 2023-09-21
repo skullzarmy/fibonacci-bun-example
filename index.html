@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>1000 steps of Fibonacci Sequence</title>
+        <style>
+            #output {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            @media (min-width: 600px) {
+                #output {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (min-width: 900px) {
+                #output {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            #output li {
+                min-width: fit-content;
+                white-space: nowrap;
+            }
+        </style>
+        <script>
+            async function fetchFibonacci(n) {
+                const response = await fetch(`/fibonacci?n=${n}`);
+                const data = await response.json();
+                return data.result;
+            }
+
+            document.addEventListener("DOMContentLoaded", async () => {
+                const output = document.getElementById("output");
+                const timeDiv = document.getElementById("time");
+                let n = 0;
+                const startTime = Date.now();
+                const promises = [];
+
+                for (let i = 0; i < 1000; i++) {
+                    const promise = fetchFibonacci(n).then((result) => {
+                        const li = document.createElement("li");
+                        li.textContent = result;
+                        output.appendChild(li);
+                    });
+                    promises.push(promise);
+                    n++;
+                }
+
+                await Promise.all(promises);
+
+                const endTime = Date.now();
+                const time = document.createElement("span");
+                time.textContent = `Compute Time: ${endTime - startTime}ms or ${((endTime - startTime) / 1000).toFixed(
+                    2
+                )}s`;
+                timeDiv.textContent = "";
+                timeDiv.appendChild(time);
+            });
+        </script>
+    </head>
+    <body>
+        <h1>1000 steps of Fibonacci Sequence</h1>
+        <div id="time">Still computing...</div>
+        <ol id="output"></ol>
+    </body>
+</html>
