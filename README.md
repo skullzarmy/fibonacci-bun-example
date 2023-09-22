@@ -23,6 +23,10 @@ One of the standout features of this project is its zero-dependency architecture
 
 [Bun runtime](https://bun.sh/) installed on your machine
 
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
 ## Getting Started
 
 Clone the Repository
@@ -35,13 +39,13 @@ cd fibonacci-bun-example
 ## Run the Server
 
 ```bash
-bun run fib-server.ts
+bun fib-server.ts
 ```
 
-Or simply:
+Or if you feel like typing more:
 
 ```bash
-bun fib-server.ts
+bun run fib-server.ts
 ```
 
 This will start the server, and it should be listening for incoming HTTP requests.
