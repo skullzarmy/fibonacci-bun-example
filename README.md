@@ -66,7 +66,7 @@ bun --watch fib-server.ts
 
 ## Accompanying Blog Post
 
-For a detailed explanation of this project, its architecture, and its features, check out the accompanying blog post on So Cal Tech Lab: [LINK TBD]
+For a detailed explanation of this project, its architecture, and its features, check out the accompanying blog post on [So Cal Tech Lab](https://socaltechlab.com/): [Peeling Back the Layers: A Comprehensive Look at Bun, the New JavaScript Runtime](https://socaltechlab.com/posts/peeling-back-the-layers-a-comprehensive-look-at-bun-the-new-javascript-runtime/)
 
 ## Contribution
 
